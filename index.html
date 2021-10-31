@@ -18,24 +18,55 @@
         <br> <!--br é uma quebra de linha-->
     </div>
 
-    <! - Início do formulário ->
-    <form>
-        <fieldset class="grupo">
+    <form> <!--início do formulário-->
+        <fieldset class="grupo"> <!--fieldset cria uum campo para colocar infformações-->
             <div class="campo">
-                <label for="nome"><strong> Nome </strong></label>
+                <label for="nomeCompleto"><strong> Nome Completo </strong></label>
                 <input type="text" name="nome" id="nome" required>
             </div>
 
             <div class="campo">
-                <label for="sobrenome"><strong> Sobrenome </strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
+                <label for="dataNasc"><strong> Data de Nascimento </strong></label>
+                <input type="date" name="dataNasc" id="dataNasc" required>
+            </div>
+
+            <div>
+                <label for="genero"> Gênero </label>
+                <select id="genero">
+                    <option selected disobled value=""> Selecione </option>
+                    <option value="homemCis"> Homem Cisgênero </option>
+                    <option value="homemTrans"> Homem Transgênero</option>
+                    <option value="mulherCis"> Mulher Cisgênero </option>
+                    <option value="muulherTrans"> Mulher Transgênero </option>
+                    <option value="naoBinario"> Não Binário </option>
+                    <option value="agenero"> Agênero </option>
+                </select>
             </div>
         </fieldset>
 
-        <div class="campo">
-            <label for="email"><strong> Email </strong></label>
-            <input type="email" name="email" id="email" required>
-        </div>
+        <fieldset>
+            <div class="campo">
+                <label for="email"><strong> Email </strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="confirmEmail"><strong> Confirme seu Email </strong></label>
+                <input type="email" name="confirmEmail" id="confirmEmail" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha"><strong> Senha </strong></label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+
+            <div class="campo">
+                <label for="confirmSenha"><strong> Confirme sua senha </strong></label>
+                <input type="password" name="confirmSenha" id="confirmSenha" required>
+            </div>
+        </fieldset>
+
+        
 
         <! - Campo de Desenvolvimento Web com 3 opções selecionáveis (botão de opção) e css de classe "campo" ->
         <div class="campo">
